@@ -33,10 +33,11 @@
     gap:6px;
     margin-bottom:12px;
     word-break:break-all;
+    font-size: 25px;
   }
   .tiny{
     opacity:0.6;
-    font-size:0.85rem;
+    font-size:26px;
     color: #bcd6df;
   }
   .result{
