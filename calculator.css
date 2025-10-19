@@ -1,0 +1,92 @@
+  :root{
+    --bg: #192f52;
+    --panel: #111827;
+    --accent: #06b6d4;
+    --btn: #1f2937;
+    --btn-hover: #63bf9a;
+    --op: #f45f14;
+    --text: #e6eef8;
+    --glass: rgba(255,255,255,0.04);
+  }
+  *{box-sizing:border-box;font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+  html,body{height:100%;margin:0;background:wheat;color:var(--text);display:flex;align-items:center;justify-content:center;padding:24px;}
+  .calculator{
+    width: 360px;
+    max-width: 95vw;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.18));
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.6), 0 2px 6px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .screen{
+    background: var(--panel);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 14px;
+    min-height: 92px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    gap:6px;
+    margin-bottom:12px;
+    word-break:break-all;
+  }
+  .tiny{
+    opacity:0.6;
+    font-size:0.85rem;
+    color: #bcd6df;
+  }
+  .result{
+    font-size:1.6rem;
+    font-weight:600;
+    letter-spacing:0.6px;
+  }
+
+  .keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+  }
+
+  button{
+    background:var(--btn);
+    color:var(--text);
+    border:0;
+    padding:14px;
+    font-size:1.05rem;
+    border-radius:10px;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    cursor:pointer;
+    user-select:none;
+    transition: transform 0.06s ease, background 0.12s ease;
+  }
+  button:active{ transform: translateY(1px) scale(0.998); }
+  button:hover{ background: var(--btn-hover); }
+
+  .btn-op{
+    background: linear-gradient(180deg,#fa7f1a,#f5740b);
+    color:#08101a;
+    font-weight:700;
+  }
+  .btn-wide{
+    grid-column: span 2;
+  }
+  .btn-light{
+    background: #1F2937;
+    color: #dbeaf3;
+  }
+
+  .small{
+    font-size:0.95rem;
+  }
+
+  @media (max-width:420px){
+    .screen{min-height:88px;padding:10px}
+    button{padding:12px;font-size:1rem}
+  }
+.btn-bold{
+    font-weight: bolder;
+}
